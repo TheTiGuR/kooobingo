@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  optionInput: any;
+  optionInput: string = '';
   optionArray: string[] = [];
   loadedOptions: string[] = [];
   cardNumber: number = 1;
@@ -22,8 +22,10 @@ export class AppComponent implements OnInit {
 
   public setOptions(options?: string[]) {
     let myOptions: string[];
-    if (options) {
+    if (options && options.length > 22) {
       myOptions = options;
+    } else if (this.optionInput !== '') {
+      myOptions = this.optionInput.split('\n');
     } else {
       myOptions = [
         '#69 Soccer Skin',
@@ -33,7 +35,7 @@ export class AppComponent implements OnInit {
         'Center of Third Circle is Northwest',
         'Center of Third Circle is Southeast',
         'Center of Third Circle is Southwest',
-        'Dies to Fall Damage',
+        'Takes Fall Damage',
         'Dies While In The Storm',
         'Eat a Consumable Food Item',
         'Eliminate Aura',
