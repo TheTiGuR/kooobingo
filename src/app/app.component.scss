@@ -1,7 +1,9 @@
-@import "primeflex/utils";
+@import "primeflex/primeflex.scss";
 
 .bingo-square {
-  @include styleclass("border-3");
+  @include styleclass(
+    "flex align-items-center justify-content-center m-1 bingo-square border-round border-3"
+  );
   width: 135px;
   height: 135px;
 }
