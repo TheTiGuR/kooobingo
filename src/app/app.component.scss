@@ -10,7 +10,7 @@
 
 .bingo-header {
   @include styleclass(
-    "flex align-items-center justify-content-center m-1 border-round border-3"
+    "flex flex-wrap card-container blue-container font-bold text-black text-xl text-center bg-blue-50 align-items-center justify-content-center"
   );
   width: 716px;
 }

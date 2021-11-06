@@ -57,6 +57,7 @@ export class AppComponent implements OnInit {
         'Open a Supply Drop',
         'Out of Mats after 1st POI',
         'Shield From Big Ammo Crate',
+        'White Heals From Big Ammo Crate',
         'Someone Ghosts to Koooooom',
         'Takes a Rift',
         'Upgrade a Weapon',
