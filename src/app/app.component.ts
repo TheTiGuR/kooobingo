@@ -41,7 +41,6 @@ export class AppComponent implements OnInit {
         'Eliminate Aura',
         'Emotes Shortly After Spectating',
         'Find Purple Weapon',
-        'Get Purple or Better in the Sideways',
         'Get in Car - Radio OFF',
         'Get in Car - Radio ON',
         'Grey Weapon Elimination',
