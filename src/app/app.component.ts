@@ -29,7 +29,6 @@ export class AppComponent implements OnInit {
     } else {
       myOptions = [
         '#69 Soccer Skin',
-        '200 Pump (1 Shot Kill)',
         'Burn Something',
         'Catch a Weapon While Fishing',
         'Center of Third Circle is Northeast',
@@ -63,7 +62,6 @@ export class AppComponent implements OnInit {
         'Out of Mats after 1st POI',
         'Shield From Big Ammo Crate',
         'Shoots Car',
-        'Someone Ghosts to Koooooom',
         'Take the L or Laugh It Up Occurs in Game',
         'Takes Fall Damage',
         'Takes a Rift',
