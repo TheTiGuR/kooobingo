@@ -9,6 +9,7 @@ export class AppComponent implements OnInit {
   optionInput: string = '';
   optionArray: string[] = [];
   loadedOptions: string[] = [];
+  selectionOptions: string[] = [];
   cardNumber: number = 1;
 
   ngOnInit(): void {
@@ -17,7 +18,12 @@ export class AppComponent implements OnInit {
 
   public updateCard(): void {
     this.cardNumber++;
-    this.setOptions(this.optionArray);
+    this.selectionOptions = [];
+    this.optionArray = [];
+    this.getRandomSelection(this.loadedOptions.length).forEach((num) => {
+      this.selectionOptions.push(this.loadedOptions[num]);
+    });
+    this.optionArray = this.selectionOptions;
   }
 
   public setOptions(options?: string[]) {
@@ -85,11 +91,10 @@ export class AppComponent implements OnInit {
       ];
     }
     this.loadedOptions = myOptions;
-    let selectionOptions: string[] = [];
     this.getRandomSelection(this.loadedOptions.length).forEach((num) => {
-      selectionOptions.push(myOptions[num]);
+      this.selectionOptions.push(myOptions[num]);
     });
-    this.optionArray = selectionOptions;
+    this.optionArray = this.selectionOptions;
   }
 
   private getRandomSelection(length: number): number[] {
