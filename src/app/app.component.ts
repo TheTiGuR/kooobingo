@@ -55,6 +55,7 @@ export class AppComponent implements OnInit {
         'Eat Food (Fish, fruit, veggies)',
         'Emotes Immediately After New Spectator',
         'First Aid Kit / Bandages From Big Ammo Crate',
+        'First Zone Pulls Max Distance',
         'Get in Car - Radio is OFF',
         'Get in Car - Radio is ON',
         'Gold Weapon From Regular Chest',
