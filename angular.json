@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "koom-bingo"
+  "cli": {
+    "analytics": false
+  }
 }
