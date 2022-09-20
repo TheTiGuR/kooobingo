@@ -1,0 +1,43 @@
+@import "primeflex/primeflex";
+
+.bingo-square {
+  @include styleclass(
+    "flex align-items-center justify-content-center m-1 bingo-square border-round border-3"
+  );
+  width: 135px;
+  height: 135px;
+}
+
+.bingo-header {
+  @include styleclass(
+    "flex flex-wrap card-container blue-container font-bold text-black text-xl text-center bg-blue-50 align-items-center justify-content-center"
+  );
+  width: 716px;
+}
+
+.bingo-footer {
+  @include styleclass(
+    "flex align-items-center justify-content-center m-1 border-round border-3"
+  );
+  width: 716px;
+}
+
+.controls {
+  @include styleclass("border-round border-3 m-1");
+  width: 690px;
+  height: 130px;
+}
+
+img.square-img {
+  height: 100px;
+  width: 100px;
+}
+img.square-big-img {
+  height: 150px;
+  width: 150px;
+}
+
+img.header-img {
+  height: 100px;
+  width: auto;
+}

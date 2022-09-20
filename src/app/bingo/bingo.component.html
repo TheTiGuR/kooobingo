@@ -1,0 +1,133 @@
+<div class="card" class="border-1 mt-3 m-auto">
+  <div class="bingo-header my-2" style="width: 740px">
+    <div class="bingo-header">
+      <div class="col flex justify-content-around">
+        <div>
+          <img src="assets/HYPE.png" alt="" class="square-img" />
+        </div>
+        <div>
+          <img src="assets/KOOOKROOOW.png" alt="" class="header-img" />
+        </div>
+        <div>
+          <img src="assets/BINGO.jpeg" alt="" class="square-img" />
+        </div>
+      </div>
+    </div>
+    <div class="bingo-square">
+      <div class="text-center">{{ optionArray[0] }}</div>
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[1] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[2] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[3] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[4] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[5] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[6] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[7] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[8] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[9] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[10] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[11] }}
+    </div>
+    <div class="bingo-square">
+      <img src="assets/GG.png" />
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[12] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[13] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[14] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[15] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[16] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[17] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[18] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[19] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[20] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[21] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[22] }}
+    </div>
+    <div class="bingo-square">
+      {{ optionArray[23] }}
+    </div>
+    <div class="border-round border-3 m-1 bingo-footer">
+      <div class="flex justify-content-between align-content-center flex-wrap">
+        <div>
+          <img src="assets/CHIP.png" alt="" class="square-big-img mt-1 ml-1" />
+        </div>
+        <div>
+          <h1>Card: #{{ cardNumber }}</h1>
+        </div>
+        <div>
+          <img src="assets/CHIP.png" alt="" class="square-big-img mt-1 mr-1" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="border-round border-3 mt-5 mb-6">
+  <div class="flex flex-wrap m-2 justify-content-between">
+    <!-- <div class="">
+      <textarea
+        pInputTextarea
+        [rows]="5"
+        [cols]="50"
+        [(ngModel)]="optionInput"
+      ></textarea>
+    </div> -->
+    <div>
+      <!-- <button
+        pButton
+        type="button"
+        class="p-button-info ml-2 ml-auto"
+        label="Set Options"
+        (click)="setOptions()"
+      ></button> -->
+      <button
+        pButton
+        type="button"
+        label="Next Card"
+        class="ml-2"
+        (click)="updateCard()"
+      ></button>
+    </div>
+  </div>
+</div>

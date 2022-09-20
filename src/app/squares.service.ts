@@ -10,6 +10,6 @@ export class SquaresService {
   constructor() {}
 
   getSquares(): Square[] {
-    return MOCKSQUARES;
+    return MOCKSQUARES.filter((s) => !s.disabled);
   }
 }
